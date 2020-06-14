@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    z-index: 1004;
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    color: #e3e3e3;
+    box-shadow: 0 0 6px #000;
+
+}
+.nav-brand{
+   margin: auto 0;
+}
+.nav-brand a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    padding-left: 2em;
+}
+
+.hamburger{
+    cursor: pointer;
+    width: 30px;
+}
+
+.hamburger div:nth-child(n){
+  background-color: white;
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  margin: 7px 0;
+}
+
+.outside{
+    transition: 1s 0.3s;
+    z-index: 1003;
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+}
+
+.inside{
+    transition: 1s cubic-bezier(0, 0, 0, 1);
+    z-index: 1003;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(41, 41, 41);
+    height: 100vh;
+    width: 101vw;
+}
+
+.outside .flex-container{
+    transition: 1s;
+    margin: 50px auto auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+
+.flex-container{
+    transition: 1s;
+    margin: 100px auto auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.inside .flex-container span:nth-child(n){
+    position: relative;
+    transition: 0.5s;
+    width: 20vw;
+    height: 25vh;
+    border-radius: 20px;
+    background-image: url("/asd.webp");
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+.inside .flex-container span:nth-child(n):hover{
+    position: relative;
+    transition: 0.5s;
+    width: 25vw;
+    height: 28vh;
+    border-radius: 20px;
+    background-image: url("/asd.webp");
+    background-size: cover;
+}
+
+.outside .flex-container span:nth-child(n){
+    position: relative;
+    margin-top: -10px;
+}
+
+.outside .flex-container span:nth-child(1){
+    transition: 1s;
+    width: 20vw;
+    height: 0vh;
+    border-radius: 20px;
+    background-image: url("https://picsum.photos/200");
+    background-size: cover;
+}
+.outside .flex-container span:nth-child(2){
+    transition: 1s 0.1s;
+    width: 20vw;
+    height: 0vh;
+    border-radius: 20px;
+    background-image: url("https://picsum.photos/200");
+    background-size: cover;
+}
+.outside .flex-container span:nth-child(3){
+    transition: 1s 0.2s;
+    width: 20vw;
+    height: 0vh;
+    border-radius: 20px;
+    background-image: url("https://picsum.photos/200");
+    background-size: cover;
+}
+.outside .flex-container span:nth-child(4){
+    transition: 1s 0.3s;
+    width: 20vw;
+    height: 0vh;
+    border-radius: 20px;
+    background-image: url("https://picsum.photos/200");
+    background-size: cover;
+}
+
+.outside .Title{
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.1em;
+}
+
+.Title{
+    transition: 1s;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.1em;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {}
